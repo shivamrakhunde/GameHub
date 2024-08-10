@@ -22,6 +22,8 @@ const GenreList = ({ onSelectGenre, selectedGenre }: Props) => {
 
   if (isLoading) return <Spinner />;
 
+  // the above 2 lines can be removed as we are statically displaying the genre list but if in future we change our mind of not using the genre list statically then this will be helpful.
+
   return (
     <>
       <Heading fontSize="2xl" marginBottom={3}>
